@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natours | Exiciting tours for adventourous people</title>
     <link rel="stylesheet" href="icon-font.css">
-   
+    
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <div class="navigation">
@@ -16,11 +17,11 @@
 
         <nav class="nav-nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link"><span>01</span> About Natours</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span>02</span> Your Benefits</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span>03</span> Popular Tours</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span>04</span> Stories</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span>05</span> Book Now</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><span>01</span> About Natours</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link"><span>02</span> Your Benefits</a></li>
+                <li class="nav-item"><a href="#tours" class="nav-link"><span>03</span> Popular Tours</a></li>
+                <li class="nav-item"><a href="#stories" class="nav-link"><span>04</span> Stories</a></li>
+                <li class="nav-item"><a href="#popup" class="nav-link"><span>05</span> Book Now</a></li>
                 
             </ul>
         </nav>
@@ -41,7 +42,7 @@
         
     </header>
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
            <div class="uCenter mgBtm8">
                <h2 class="headingSec">
                 Exciting tours for adventurous people
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -210,7 +211,7 @@
              </div>
             
         </section>
-        <section class="stories">
+        <section class="stories" id="stories">
             <div class="bg">
                 <video class="bg-content" autoplay muted loop>
                     <source src="video.mp4" type="video/mp4">
@@ -265,7 +266,7 @@
             
         </section>
 
-        <section class="booking">
+        <section class="booking" id="bookingSection">
             <div class="row">
                 <div class="book">
                     <div class="book-form">
@@ -344,10 +345,21 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit tempora cupiditate quibusdam amet iure in sapiente error voluptas quae aut, sequi deleniti doloribus, ipsum obcaecati, modi eveniet officiis accusamus quaerat.
                     doloribus, ipsum obcaecati, modi eveniet officiis accusamus quaerat.
                 </p>
-                <a href="#" class="btn card-btn btncolor popup-btn">Book Now</a>
+                <a href="#popup" class="btn card-btn btncolor popup-btn">Book Now</a>
             </div>
         </div>
     </div>
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navCheckbox = document.querySelector('.nav-checkbox');
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navCheckbox.checked = false;
+      });
+    });
+  });
+</script>
     
 </body>
 </html>  

@@ -8,6 +8,9 @@ Dark green: #28b485;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 80%;
+}   
 
 body {
     font-family: sans-serif ;
@@ -163,7 +166,7 @@ header {
     background-color: #f7f7f7;
     padding: 15rem 10rem;
     margin-top: -20vh;
-    height: 130vh;
+    height: 150vh;
 }
 
 .headingSec {
@@ -173,7 +176,7 @@ header {
     display: inline-block;
     -webkit-background-clip: text; 
     color: transparent;
-     background-clip: text;
+    background-clip: text;
     transition: all .2s;
     letter-spacing: 2px;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -217,6 +220,7 @@ header {
 .aboutPara:not(:last-child){
     margin-bottom: 2rem;
 }
+
 .btnCheck:link, .btnCheck:visited {
     color:#28b485;
     display: inline-block;
@@ -226,6 +230,7 @@ header {
     border-bottom: 2px solid #28b485;
     transition: all .2s;
 }
+
 .btnCheck:hover{ 
     background-color:#28b485;
     color: #fff;
@@ -233,6 +238,7 @@ header {
     box-shadow: 0 10px 20px rgba(0,0,0,.15);
 
 }
+
 .btnCheck:active { 
     transform: translateY(-1px );
     box-shadow: 0 5px 10px rgba(0,0,0,.15);
@@ -241,6 +247,7 @@ header {
 .composition{
     position: relative;
 }
+
 .composition .photo{
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.4);
@@ -297,9 +304,11 @@ header {
     float: left;
     
 }
+
 .col-1-of-4:not(:last-child){
     margin-right: 5rem;
 }
+
 .feature-box{
     background-color:#f7f7f7;
     font-size: 1rem;
@@ -363,20 +372,25 @@ header {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.2);
 }
+
 .front{
     background-color: #fff;
     color: #000;
 }
+
 .back{
     background-color: #28b485;
     transform: rotateY(180deg); 
 }
+
 .card:hover .front{
     transform: rotateY(-180deg);
 }
+
 .card:hover .back{
     transform: rotateY(0deg);
 }
+
 .orange-card{
     background-image: linear-gradient(to right bottom, #ffb900,#ff7730);
 
@@ -417,8 +431,8 @@ header {
     top: 7rem;
     right: 2rem;
     width: 65%;
-     
 }
+
 .span-card{
     padding: 1rem;
     box-decoration-break: clone;
@@ -489,6 +503,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
+
 .btncolor{
     background-color: #28b485;
     color: #fff;
@@ -500,9 +515,11 @@ header {
     background-color: transparent;
     position: relative;
 }
+
 .row{
     margin: 10rem auto;
 }
+
 .story{
     width: 75%;
     margin: 0 auto;
@@ -513,18 +530,20 @@ header {
     font-size: 1.6rem;
     padding-left: 9rem;
     
-
     transform: skewX(-12deg);
 }
+
 .story > * {
     transform: skewX(12deg); 
-} 
+}
+
 .story-text-para{
     font-size: 1rem;
     padding: 5rem;
     padding-top: 1.5rem;
     text-align: justify;
 }
+
 .story-shape{
     width: 15rem;
     height: 15rem;
@@ -536,6 +555,7 @@ header {
     transform: translateX(-3rem) skewX(12deg); ;
     position: relative;
 }
+
 .story-image{
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -543,6 +563,7 @@ header {
     transition: all 0.5s;
 
 }
+
 .story-caption{
     position:absolute;
     top: 50%;
@@ -557,10 +578,12 @@ header {
     transition: all 0.5s;
     backface-visibility: hidden;
 }
+
 .story:hover .story-caption {
     opacity: 1;
     transform: translate(-50%,-50%);
 }
+
 .story:hover .story-image{
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
@@ -584,6 +607,7 @@ header {
     rgba(126, 213, 111, 0.801),
     rgba(40, 180, 133, 0.801) );
 }
+
 .book{
     background-image: linear-gradient(100deg, #ffffffcc 0%, #ffffffcc 50%, transparent 50%),url(nat-10.jpg);
     background-size:  cover;
@@ -593,16 +617,20 @@ header {
     margin: 0 auto;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.2);
 }
+
 .book-form{
     width: 50%;
     padding: 6rem;
 }
+
 .margin-form{
     margin-bottom: 5.5rem;
 }
+
 .form-group:not(:last-child){
     margin-bottom: 2rem;
 }
+
 .form-input{
     font-family: inherit;
     font-size: 1.2rem;
@@ -951,22 +979,301 @@ margin-right: 2rem;
     opacity: 1;
 }
 
-
-@media (max-width:1200px) {
-    body{
-        font-size: 95%;
-    }    
+/* Large Screens (max-width: 1200px / 75em) */
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%; /* 9px */
+    }
 }
 
-@media (max-width:900px) {
-    body{
-        font-size: 80%;
-    }    
+/* Medium Screens (max-width: 900px / 56.25em) */
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%; /* 8px */
+    }
+
+    /* Header */
+    /* No specific changes at this breakpoint */
+
+    /* Navigation */
+    /* No specific changes at this breakpoint */
+
+    /* About Section */
+    .section-about {
+        padding: 10rem 5rem;
+        height: auto;
+    }
+    .row {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+    .col-1-of-2 {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .composition .photo {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 6rem 2rem;
+        height: auto;
+    }
+    .col-1-of-4 {
+        width: calc((100% - 5rem)/2);
+        margin-bottom: 3rem;
+    }
+    .col-1-of-4:nth-child(odd) {
+        margin-right: 5rem;
+    }
+    .col-1-of-4:nth-child(even) {
+        margin-right: 0;
+    }
+    .feature-box {
+        height: auto;
+    }
+
+    /* Tours Section */
+    .tours {
+        padding: 10rem 2rem 5rem;
+    }
+    .col-1-of-3 {
+        width: calc((100% - 5rem)/2);
+        margin-bottom: 3rem;
+    }
+    .col-1-of-3:nth-child(odd) {
+        margin-right: 5rem;
+    }
+    .col-1-of-3:nth-child(even) {
+        margin-right: 0;
+    }
+    .col-1-of-3:nth-child(3) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Stories Section */
+    .stories {
+        padding: 6rem 2rem;
+    }
+    .story {
+        width: 90%;
+        padding: 3rem;
+        padding-left: 7rem;
+    }
+
+    /* Booking Section */
+    .booking {
+        padding: 5rem 2rem;
+    }
+    .book {
+        width: 90%;
+        background-image: linear-gradient(to right, #ffffffcc, #ffffffcc), url(nat-10.jpg);
+    }
+    .book-form {
+        width: 100%;
+        padding: 4rem;
+    }
+    .form-radio {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 6rem 2rem;
+    }
+    .footer-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .copyright {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 90%;
+        display: block;
+    }
+    .popup-left,
+    .popup-right {
+        display: block;
+        width: 100%;
+    }
+    .popup-right {
+        padding: 2rem;
+    }
+    .popup-text {
+        column-count: 1;
+        font-size: 1.4rem;
+    }
 }
 
-@media (max-width:600px) {
-    body{
-        font-size: 75%;
-    }    
+/* Small Screens (max-width: 600px / 37.5em) */
+@media only screen and (max-width: 37.5em) {
+    /* Base */
+    header {
+        height: 80vh;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    }
+    .logoBox {
+        top: 30px;
+        left: 30px;
+    }
+    .logo {
+        height: 25px;
+    }
+    .headingPrimaryMain {
+        font-size: 5rem;
+        letter-spacing: 1rem;
+    }
+    .headingPrimarySub {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    /* Navigation */
+    .nav-bkg {
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+    .nav-btn {
+        top: 3rem;
+        right: 3rem;
+    }
+    .nav-icon,
+    .nav-icon::before,
+    .nav-icon::after {
+        width: 2.5rem;
+    }
+    .nav-link:link,
+    .nav-link:visited {
+        font-size: 3rem;
+        padding: 1.5rem 2rem;
+    }
+
+    /* About Section */
+    .section-about {
+        padding: 12rem 2rem;
+        margin-top: -10vh;
+        height: 200vh;
+    }
+    .headingSec {
+        font-size: 2.5rem;
+    }
+    .aboutPara {
+        font-size: 1.4rem;
+    }
+    .composition .photo {
+        position: relative;
+        width: 90%;
+        margin: 1rem auto;
+        display: block;
+        float: none;
+        clear: both;
+        top: auto;
+        left: auto;
+        right: auto;
+        box-shadow: none;
+        margin-bottom: 5rem;
+    }
+
+    /* Features Section */
+    .col-1-of-4 {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+    .icon {
+        font-size: 3rem;
+    }
+
+    /* Tours Section */
+    .col-1-of-3 {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .card {
+        height: auto;
+        perspective: none;
+    }
+    .card-side {
+        position: relative;
+        height: auto;
+        transform: none !important;
+        box-shadow: none;
+    }
+    .back {
+        display: none;
+    }
+    .front-img {
+        height: 20rem;
+    }
+    .front-heading {
+        font-size: 1.8rem;
+        top: 5rem;
+    }
+    .btncolor {
+        margin-top: 2rem;
+    }
+
+    /* Stories Section */
+    .story {
+        width: 100%;
+        padding: 3rem;
+        transform: none;
+        margin-bottom: 5rem;
+    }
+    .story > * {
+        transform: none;
+    }
+    .story-shape {
+        width: 10rem;
+        height: 10rem;
+        float: none;
+        margin: 0 auto 2rem;
+        transform: translateX(0);
+    }
+    .story-image {
+        transform: translateX(-2rem) scale(1.2);
+    }
+    .story-text-para {
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    /* Booking Section */
+    .book {
+        width: 100%;
+        height: auto;
+    }
+    .form-input {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Footer */
+    /* No additional changes beyond 56.25em */
+
+    /* Popup */
+    /* No additional changes beyond 56.25em */
 }
 
+/* Extra-Large Screens (min-width: 1800px / 112.5em) */
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%; /* 12px */
+    }
+}
